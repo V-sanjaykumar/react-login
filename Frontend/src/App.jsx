@@ -20,7 +20,7 @@ function App() {
     setpass(event.target.value)
   }
 function check(){
-  var logindetails=axios.get(`https://react-login-1-8xcq.onrender.com/login?username=${user}&password=${pass}`)
+  var logindetails=axios.get(`http://localhost:3000/login?username=${user}&password=${pass}`)
   logindetails.then(function(data){
     if(data.data === true)
     {
