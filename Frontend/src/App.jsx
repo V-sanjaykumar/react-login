@@ -19,7 +19,7 @@ function App() {
     setpass(event.target.value)
   }
   function check() {
-    var logindetails = axios.get(`https://react-login-backend-dni6.onrender.com//login?username=${user}&password=${pass}`)
+    var logindetails = axios.get(`https://react-login-58zi.vercel.app/login?username=${user}&password=${pass}`)
     logindetails.then(function (data) {
       if (data.data === true) {
         navigate("/success")
