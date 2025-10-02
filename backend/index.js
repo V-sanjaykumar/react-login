@@ -3,7 +3,7 @@ const cors=require("cors")
 const app=express()
 app.use(cors())
 
-var username="john"
+var username="Gohan"
 var password=123
 
 app.use(express.urlencoded({extended:true}))
